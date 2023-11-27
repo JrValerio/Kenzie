@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S7-13 💪 Atividade Manipulando Objetos</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>S7-13 💪 Atividade Manipulando Objetos</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Exercício 1 - Verificando aprovações</h2>
+        <p>Dada a seguinte lista de alunos:</p>
+        <article>
+          <pre>
+            <code class="language-javascript">
+            let listaAlunos = [
+              {
+                nome: 'João',
+                curso: 'Ciencia da Computação',
+                turno: 'Noturno',
+                mediaCorte: 7,
+                materias: [
+                        {   
+                            nome: 'Calculo I',
+                            avaliacoes: [6, 8, 10, 8]
+                        },
+                        {
+                            nome: 'Pensamento Computacional',
+                            avaliacoes: [6, 8, 6, 8]
+                        },
+                        {
+                            nome: 'Linguagem Orientada a Objetos',
+                            avaliacoes: [7, 8, 9, 10]
+                        },
+                        {
+                            nome: 'Arquitetura de Organização de Computadores',
+                            avaliacoes: [6, 8, 7, 8]
+                        }
+                    ]
+                }
+            ]
+                  
+           </code>
+        </pre>
+        </article>
+        <p>
+          Cada aluno é representado por um objeto, contendo os seguintes
+          atributos:
+        </p>
+        <ul>
+          <li>nome;</li>
+          <li>curso;</li>
+          <li>turno;</li>
+          <li>mediaCorte;</li>
+          <li>
+            matérias: uma lista das matérias, onde cada matéria é representada
+            por um objeto, contendo:
+            <div>
+              <ul>
+                <li>nome;</li>
+                <li>
+                  avaliacoes: uma lista com as notas obtidas pelo aluno em cada
+                  avaliação realizada no semestre.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <p>
+          Sua tarefa é determinar em quantas matérias o aluno foi aprovado. Se o
+          aluno obteve nota maior ou igual a 6, está aprovado.
+        </p>
+      </section>
+      <section>
+        <h2>Exercício 2 - Verificando aprovações no semestre</h2>
+        <p>
+          Sua tarefa é
+          <strong>verificar se o aluno foi aprovado no semestre atual</strong> e
+          poderá prosseguir para o próximo. Crie uma função chamada
+          <strong>calculaMedia</strong> para saber média total do aluno, a
+          partir das notas que ele obteve nas avaliações do semestre.
+        </p>
+      </section>
+      <section>
+        <h2>Exercício 3 - Verificando destino de passageiros</h2>
+        <p>Dado o seguinte objeto onibus:</p>
+        <article>
+          <pre>
+                    <code class="language-javascript">
+                        const onibus = {
+                            capacidade: 40,
+                            origem: 'Curitiba-PR',
+                            destino: 'Rio de Janeiro-RJ',
+                            paradas: [
+                              'São Paulo-SP',
+                              'Campinas-SP',
+                              'São José dos Campos-SP',
+                              'Volta Redonda-RJ'
+                            ],
+                            passageiros: [
+                              {
+                                nome: 'Luis da Silva',
+                                rg: '1234567890',
+                                bilhete: {
+                                  origem: 'Curitiba-PR',
+                                  destino: 'São José dos Campos-SP',
+                                  poltrona: 15,
+                                }
+                              },
+                              {
+                                nome: 'João da Silva',
+                                rg: '1234567891',
+                                bilhete: {
+                                  origem: 'São Paulo-SP',
+                                  destino: 'Rio de Janeiro-RJ',
+                                  poltrona: 16,
+                                }
+                              }
+                            ]
+                          }
+                          </code>
+
+                          </pre>
+        </article>
+        <p>Um ônibus possui as seguintes propriedades:</p>
+        <div>
+          <ul>
+            <li>
+              capacidade: um número inteiro com a quantidade total de lugares do
+              ônibus;
+            </li>
+            <li>origem;</li>
+            <li>destino;</li>
+            <li>
+              paradas: uma lista com todas as cidades em que o ônibus passa,
+              entre a origem e o destino;
+            </li>
+            <li>
+              passageiros: uma lista com todos os passageiros presentes no
+              ônibus, onde cada passageiro é representado por um objeto,
+              contendo:
+              <div>
+                <ul>
+                  <li>origem;</li>
+                  <li>destino;</li>
+                  <li>poltrona.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>
+            Sua tarefa é
+            <strong
+              >determinar quais passageiros irão descer do ônibus em determinada
+              parada.</strong
+            >
+          </p>
+          <p>
+            Desenvolva um método que recebe a parada atual como parâmetro e
+            verifica se é igual ao valor de <strong>paradas</strong> do objeto
+            <strong>onibus</strong>. Esse método deverá verificar em quais
+            passageiros o destino é igual à parada atual do ônibus.
+          </p>
+          <p>
+            Em seguida, deve retornar um array com todos os passageiros que irão
+            descer na parada atual.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <br>
+        <span><a href="https://canvas.kenzie.com.br/courses/93/pages/s7-13-%7C-atividade-manipulando-objetos?module_item_id=24240" target="_blank">Solução</a></span>
+        <br>
+    </footer>
+  </body>
+</html>
