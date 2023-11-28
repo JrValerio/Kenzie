@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💠 Sprint 8 - Atividades e Desafios</title>
+    <script src="./script.js" defer></script>
+    <style>
+      table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: auto;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>💠 Sprint 8 - Atividades e Desafios</h1>
+    </header>
+    <main>
+      <section>
+        <h2>S8-01 | 💪 Atividade - JavaScript: Desafio Portaria</h2>
+        <p>
+          Desenvolva um algoritmo para uma casa de eventos que solicite ao
+          usuário seu nome, idade e se está acompanhado. Crie três variáveis:
+          <strong>nome, idade e estaAcompanhado</strong>.
+        </p>
+        <p>
+          A variável estaAcompanhado é do tipo booleana, mas o usuário vai
+          fornecer a resposta como <strong>"s"</strong> para sim ou
+          <strong>"n"</strong> para não.
+        </p>
+        <p>
+          Teste se a idade é <strong>igual ou superior a 18 anos</strong>. Se
+          não for, exiba um alerta informando:
+          <strong>"Entrada não permitida para [nome]: Menor de idade."</strong>
+        </p>
+        <p>
+          Se a idade for <strong>18 anos ou mais</strong>, verifique se o
+          usuário está acompanhado. Se estiver, exiba:
+          <strong>"Entrada permitida para [nome]: Conceder desconto."</strong>
+          Caso contrário, exiba:
+          <strong>"Entrada permitida para [nome]: Valor integral."</strong>
+        </p>
+      </section>
+      <section>
+        <h2>S8-02 | 💪 Atividade - JavaScript: Aprovado ou Reprovado</h2>
+        <div>
+          <p>
+            Você foi encarregado de criar um algoritmo capaz de determinar se um
+            aluno foi aprovado ou não.
+          </p>
+          <p>
+            Para que um aluno seja aprovado, a média total das notas deve ser
+            superior a 8 e a presença deve ser maior que 6.
+          </p>
+          <p>
+            Desenvolva um algoritmo que solicite as seguintes informações do
+            aluno: matéria, nome, nota e presença. As notas para cada matéria
+            variam de 0 a 10. Armazene cada informação em uma variável. O nome e
+            a presença serão solicitados apenas uma vez, enquanto nota e matéria
+            serão solicitadas ao usuário várias vezes. Portanto, você deve usar
+            estrutura de repetição para atualizar valores de algumas variáveis
+            para cada matéria e cada nota.
+          </p>
+          <div>
+            <span>Por exemplo:</span>
+            <ul>
+              <li>
+                Some todas as notas e atribua o resultado à variável somaNota.
+              </li>
+              <li>
+                Calcule a média das notas e atribua o valor à variável
+                mediaNota. Verifique se a média está acima ou abaixo de 8.
+              </li>
+              <li>Note que tanto nota quanto presença não podem ser 0.</li>
+              <li>
+                Certifique-se de que o nome do aluno tenha pelo menos 5
+                caracteres, utilizando o método .length para verificar o tamanho
+                da string.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span>Aqui estão algumas instruções para o desenvolvimento:</span>
+            <ul>
+              <li>
+                Se o usuário inserir um número abaixo de 0 ou acima de 10 para a
+                nota ou presença, emita um alerta informando que o valor é
+                inválido.
+              </li>
+              <li>
+                Se o nome tiver menos de 5 caracteres, emita um alerta
+                informando que o nome é inválido.
+              </li>
+              <li>
+                Se a média das notas do aluno for igual ou superior a 8 e a
+                presença for igual ou superior a 6, exiba o seguinte alerta: "A
+                nota do aluno [nome] é [mediaNota] e sua presença é [presenca]:
+                Aluno aprovado!".
+              </li>
+              <li>
+                Caso contrário, exiba o seguinte alerta: "A nota do aluno [nome]
+                é [mediaNota] e sua presença é [presenca]: Aluno reprovado!".
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <span>Para referência, veja o exemplo abaixo:</span>
+          <div>
+            <br />
+            <table>
+              <thead>
+                <tr>
+                  <th>Matéria</th>
+                  <th>Nota</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Matemática</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Português</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Informática</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Geografia</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Inglês</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>História</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Filosofia</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Sociologia</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Literatura</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Educação Física</td>
+                  <td>7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Não se preocupe com a tabela, você não precisa apresentar nada na
+            tabela, apenas nos alertas. Ela pode ser usada como base para seus
+            testes. Utilizando a tabela acima como referência para testes, se
+            você inserir as notas correspondentes a este aluno, a saída esperada
+            seria:
+          </p>
+          <p>
+            "A nota do aluno [nome] é 9.1 e sua presença é 9: Aluno aprovado!"
+          </p>
+          <p>
+            Lembre-se de que o nome e a presença são inseridos pelo usuário.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>S8-03 | 💪 Atividade - JavaScript: Acerte o Número</h2>
+        <p>
+          Você foi incumbido de criar uma aplicação onde um número aleatório é
+          gerado e os participantes tentam adivinhar esse número. Para isso,
+          siga os passos abaixo:
+        </p>
+        <ol>
+          <li>
+            Desenvolva a Função de Geração de Número Aleatório:
+            <p>
+              Crie uma função chamada
+              <strong>gerarNumeroAleatorio()</strong> que não recebe parâmetros.
+              Esta função deve utilizar <strong>Math.random()</strong> para
+              gerar um número aleatório. Para garantir que o número gerado seja
+              um inteiro positivo até 20, você precisa arredondar o valor para o
+              inteiro mais próximo.
+            </p>
+          </li>
+          <li>
+            Desenvolva a Função para Verificar o Palpite:
+            <p>
+              Crie uma função chamada
+              <strong>verificarPalpite(numeroAleatorio, palpite)</strong>. Esta
+              função receberá o número aleatório gerado e o palpite do usuário.
+              Inicie uma variável chamada <strong>tentativa</strong> com o valor
+              1.
+            </p>
+            <p>
+              Use um laço while para verificar se o
+              <strong>numeroAleatorio</strong> é igual ao
+              <strong>palpite</strong>. A cada iteração do laço, incremente a
+              variável <strong>tentativa</strong> em +1.
+            </p>
+            <p>
+              Enquanto o palpite estiver incorreto, emita um alerta com a
+              mensagem: <strong>"Tente novamente."</strong>
+            </p>
+            <p>
+              Se o palpite estiver correto, emita um alerta indicando a
+              tentativa: <strong>"Você acertou na tentativa [x]."</strong>
+            </p>
+          </li>
+          <li>
+            Gere o Número Aleatório e Obtenha o Palpite do Usuário:
+            <p>
+              Crie uma variável chamada <strong>numeroAleatorio</strong> para
+              armazenar o resultado da função
+              <strong>gerarNumeroAleatorio()</strong>.
+            </p>
+            <p>
+              Utilize o <strong>prompt</strong> para obter o palpite do usuário.
+              Assegure-se de aceitar somente inteiros positivos.
+            </p>
+          </li>
+          <li>
+            Chame a Função de Verificação de Palpite:
+            <p>
+              Chame a função <strong>verificarPalpite(numeroAleatorio</strong>,
+              palpite) passando o número aleatório gerado e o palpite do usuário
+              como argumentos.
+            </p>
+          </li>
+        </ol>
+        <span
+          >Ao seguir esses passos, você terá uma aplicação funcional onde os
+          participantes podem tentar adivinhar um número aleatório.</span
+        >
+      </section>
+      <section>
+        <h2>S8-04 | 💪 Atividade - JavaScript: Enigma</h2>
+        <p>
+          Você faz parte da equipe de inteligência da polícia e está
+          investigando a troca de mensagens entre dois grupos de crackers. O
+          chefe de polícia suspeita que eles estejam planejando algo, mas até
+          agora, apenas algumas letras foram identificadas. A dificuldade está
+          em separar essas letras em palavras compreensíveis, já que não há
+          espaços entre elas.
+        </p>
+        <p>
+          Sua missão é criar um programa que automatize o processo de contar
+          quantas palavras existem no texto digitado, seguindo a regra: qualquer
+          caractere que não seja uma letra minúscula de 'a' a 'z' é considerado
+          um separador de palavra.
+        </p>
+        <h3>Especificações do Programa:</h3>
+        <p>
+          O programa deve receber um texto com até 250 caracteres como entrada e
+          deve fornecer como saída o número de palavras presentes no texto.
+        </p>
+        <span>Exemplos:</span>
+        <ul>
+          <li>
+            Entrada: sss.aasd.sss <br />
+            Saída: 3
+          </li>
+          <li>
+            Entrada: sssaasdsSs <br />
+            Saída: 2
+          </li>
+          <li>
+            Entrada: sssa1asdss <br />
+            Saída: 2
+          </li>
+        </ul>
+        <p>
+          Desenvolva um algoritmo capaz de resolver esse enigma e contar as
+          palavras no texto fornecido, ajudando assim a polícia a decifrar as
+          mensagens dos crackers.
+        </p>
+      </section>
+      <section>
+        <h2>S8-05 | 💪 Atividade - JavaScript: Gestão de Perguntas</h2>
+        <p>
+          Você foi contratado para criar uma aplicação chamada Slenzie, que será
+          usada para armazenar perguntas em eventos digitais. O sistema deve ser
+          capaz de criar eventos, adicionar perguntas, gerenciar votos e indicar
+          quais perguntas foram respondidas. Vamos definir as funcionalidades do
+          programa de acordo com os requisitos fornecidos.
+        </p>
+        <h3>Especificações do Programa:</h3>
+        <div>
+          <ol>
+            <li>
+              Função createEvent(objEvent, eventName):
+              <div>
+                <ul>
+                  <li>
+                    Recebe um objeto do tipo slenzie e uma string eventName.
+                  </li>
+                  <li>
+                    Verifica se eventName é uma string com pelo menos 5
+                    caracteres.
+                  </li>
+                  <li>
+                    Se válido, atribui eventName à propriedade name do objeto
+                    slenzie e retorna o objeto atualizado.
+                  </li>
+                  <li>Se inválido, retorna: "The input value is invalid".</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              Função addQuestion(objEvent, objQuestion):
+              <div>
+                <ul>
+                  <li>
+                    Recebe um objeto do tipo slenzie e um objeto do tipo
+                    question.
+                  </li>
+                  <li>
+                    Verifica se os objetos do tipo slenzie e question são não
+                    definidos.
+                  </li>
+                  <li>
+                    Se válidos, adiciona objQuestion ao array questions do
+                    objeto slenzie e retorna o objeto atualizado..
+                  </li>
+                  <li>
+                    Se inválidos, retorna: "The user or question cannot be
+                    undefined".
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              Função addVoteToQuestion(objEvent, questionIndex):
+              <div>
+                <ul>
+                  <li>
+                    Recebe um objeto do tipo slenzie e um número questionIndex.
+                  </li>
+                  <li>
+                    Verifica se questionIndex está dentro dos limites da lista
+                    de perguntas (questions).
+                  </li>
+                  <li>
+                    Se válido, incrementa vote da pergunta no índice
+                    questionIndex em 1 e retorna: "Vote registered
+                    successfully".
+                  </li>
+                  <li>
+                    Se questionIndex estiver fora dos limites: "Question not
+                    found".
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              Função answerQuestion(objEvent, questionIndex):
+              <div>
+                <ul>
+                  <li>
+                    Recebe um objeto do tipo slenzie e um número questionIndex.
+                  </li>
+                  <li>
+                    Verifica se questionIndex está dentro dos limites da lista
+                    de perguntas (questions).
+                  </li>
+                  <li>
+                    Define a propriedade answered da pergunta na posição
+                    questionIndex como true.
+                  </li>
+                  <li>Se válido, retorna: "Question answered successfully".</li>
+                  <li>
+                    Se questionIndex estiver fora dos limites: "Question not
+                    found."
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              Função unansweredQuestions(objEvent):
+              <div>
+                <ul>
+                  <li>Recebe um objeto do tipo slenzie.</li>
+                  <li>Inicializa um array vazio chamado output.</li>
+                  <li>Percorre a lista de perguntas (questions).</li>
+                  <li>
+                    Adiciona à lista output as perguntas que não foram
+                    respondidas (propriedade answered é false).
+                  </li>
+                  <li>Retorna a lista output.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <p>
+          Desenvolva essas funções para que o sistema Slenzie funcione conforme
+          os requisitos especificados, permitindo uma gestão eficiente de
+          perguntas para eventos digitais.
+        </p>
+      </section>
+      <section>
+        <h2>S8-06 | 💪 Atividade - JavaScript: Caixa Eletrônico</h2>
+        <p>
+          Nesta atividade vamos desenvolver as funcionalidades de um caixa
+          eletrônico, a partir das informações de um cliente.
+        </p>
+        <p>
+          Nós sabemos que um caixa eletrônico, possui algumas responsabilidades,
+          como: saque, saldo, depósito, entre outros... Agora, vamos manipular
+          informações de um objeto para realizar algumas destas ações.
+        </p>
+        <span>Dado o objeto:</span>
+        <pre>
+            <code class="language-javascript">
+                const user = {
+                name: "Jhon Doyle Fox",
+                savingsBalance: 500,
+                cardsInformation: [
+                    {
+                     number: "5160 4196 4843 3388",
+                     creditBalance: 1000,
+                     ensign: "American Express",
+                    },
+                  ],
+                };
+            </code>
+        </pre>
+        <span>Iremos desenvolver as seguintes funcionalidades:</span>
+        <div>
+          <ol>
+            <li>Saldo</li>
+            <li>Depósito</li>
+            <li>Saque</li>
+          </ol>
+        </div>
+        <h3>Estruturando as funcionalidades</h3>
+        <div>
+          <div>
+            <p>
+              O cliente deve primeiro inserir no prompt o número da
+              funcionalidade desejada, sendo 1 para saldo, 2 para depósito e 3
+              para saque.
+            </p>
+            <p>
+              <strong>1. Saldo</strong> - Desenvolva uma função chamada
+              getBalance. Esta função irá receber como parâmetro o tipo da conta
+              e o usuário. A função deverá retornar o saldo disponível.
+            </p>
+          </div>
+          <h4>Exemplificando</h4>
+          <div>
+            <ul>
+              <li>
+                Crie uma variável chamada responseBalance que armazena a
+                resposta de um prompt que solicita ao cliente que digite 1 para
+                poupança ou 2 para crédito.
+              </li>
+              <li>
+                Chame a função getBalance, passando o user e o tipo da conta.
+              </li>
+              <li>
+                Crie uma variável chamada balance que armazena o valor da
+                propriedade de saldo referente ao tipo de conta informada.
+              </li>
+              <li>Retorne a variável balance em um alert.</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              <strong>2. Depósito</strong> - Desenvolva uma função chamada
+              makeDeposit. Esta função deve receber como parâmetro o usuário e o
+              valor a ser depositado.
+            </p>
+            <p>Os depósitos são incrementados no saldo da poupança.</p>
+            <h4>Exemplificando</h4>
+            <div>
+              <ul>
+                <li>
+                  Crie uma variável chamada valueForDeposit que armazena o valor
+                  que o usuário deseja depositar por meio de um prompt:
+                  <div>
+                    <ul>
+                      <li>O valor de depósito não pode ser do tipo string.</li>
+                      <li>
+                        O valor de depósito tem que ser um inteiro positivo.
+                      </li>
+                      <li>
+                        O valor de depósito deve ser maior que 5 e menor que
+                        500.
+                        <div>
+                          <ul>
+                            <li>
+                              Se os requisitos da variável não forem atendidos
+                              retorne: "This value is not allowed".
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  Chame a função makeDeposit, passando o user e o valor a ser
+                  depositado.
+                  <div>
+                    <ul>
+                      <li>
+                        Acesse a propriedade savingsBalance e a incremente com o
+                        valor passado para depósito.
+                      </li>
+                      <li>
+                        Retorne dentro de um alert "Deposit made successfully".
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p>
+              <strong>3. Saque</strong> - Desenvolva uma função chamada
+              makeWithdrawal. O objetivo principal da função é possibilitar ao
+              cliente que ele faça retiradas em sua conta. Essa função recebe
+              três parâmetros: um objeto do tipo user, o valor a ser sacado e o
+              tipo da conta.
+            </p>
+            <p>
+              O cliente pode escolher sacar da poupança ou do limite de crédito
+              que o banco disponibilizou. Além disso, a função não deve permitir
+              a entrada de valores negativos e não se pode realizar saques
+              abaixo de R$ 5,00.
+            </p>
+            <p>O caixa não realiza saques de valores com casa flutuante.</p>
+            <p>
+              Caso o valor solicitado para saque não esteja disponível na conta,
+              retorne "Saldo insuficiente".
+            </p>
+            <h4>Exemplificando</h4>
+            <div>
+              <ul>
+                <li>
+                  Crie uma variável chamada responseWithDraw que armazena a
+                  resposta de um prompt que solicita ao cliente que digite 1
+                  para poupança ou 2 para crédito.
+                </li>
+                <li>
+                  Crie uma variável chamada withdrawnAmount que armazena que
+                  armazena a resposta de um prompt que solicita ao cliente que
+                  digite o valor que se deseja sacar:
+                  <div>
+                    <ul>
+                      <li>O valor de saque não pode ser do tipo string.</li>
+                      <li>O valor de saque tem que ser um inteiro positivo.</li>
+                      <li>
+                        O valor de saque deve ser maior que 5 e menor que 500.
+                        <div>
+                          <ul>
+                            <li>
+                              Se os requisitos da variável não forem atendidos
+                              retorne: "This value is not allowed"
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  Chame a função makeWithDrawal passando um objeto do tipo user,
+                  o valor a ser sacado e o tipo da conta como parâmetro.
+
+                  <div>
+                    <ul>
+                      <li>
+                        Teste se o valor pretendido de saque é menor ou igual ao
+                        saldo disponível para perfil de conta informado.
+
+                        <div>
+                          <ul>
+                            <li>
+                              Se o usuário não tiver saldo disponível, retorne
+                              dentro de uma alert: " Balance unavailable"
+                            </li>
+                            <li>
+                              Se o usuário tiver saldo disponível:
+
+                              <div>
+                                <ul>
+                                  <li>
+                                    Decremente o valor do saldo com valor de
+                                    saque passado.
+                                  </li>
+                                  <li>
+                                    Retorne dentro de um alert: "Withdrawal
+                                    carried out."
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>S8-07 | 💪 Atividade - Javascript: Dados Escolares</h2>
+        <p>
+          Você foi contratado para desenvolver uma solução para consultas
+          referentes aos dados dos alunos. Com base nos dados de um aluno, você
+          deverá desenvolver a lógica para consultar o curso, matérias, situação
+          da matrícula e gerar a carteirinha de estudante.
+        </p>
+        <span>Dado o objeto:</span>
+        <pre>
+                <code class="language-javascript">
+                    const alunoCurso = {
+                        nome: "João",
+                        idade: 31,
+                        curso: "FullStack",
+                        instituicao: "Kenzie Br",
+                        materias: ["Html", "Css", "JavaScript", "Python"],
+                        situacaoMatricula: true,
+                      };
+                </code>
+            </pre>
+        <p>
+          Desenvolva um algoritmo que recebe via prompt o tipo de consulta que o
+          sistema deve realizar. A entrada deverá ser um número de 1 a 4,
+          representando as opções a seguir:
+        </p>
+        <div>
+          <ol>
+            <li>Curso</li>
+            <li>Matéria</li>
+            <li>Situação de Matrícula</li>
+            <li>Gerar Carteira</li>
+          </ol>
+        </div>
+        <h3>Estruturando as funcionalidades</h3>
+        <div>
+          <p>
+            <strong>1. Curso</strong> - Desenvolva uma função chamada
+            getTheCourse. Esta função recebe como parâmetro um objeto do tipo
+            aluno e deve acessar a propriedade "curso" e retornar o valor em um
+            alert.
+          </p>
+          <h4>Exemplificando</h4>
+          <div>
+            <ul>
+              <li>
+                Chame a Função getTheCourse passando o objeto alunoCurso. Ao
+                receber um objeto do tipo aluno como parâmetro acesse a
+                propriedade curso e retorne seu valor em um alert.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong>2. Matéria</strong> - Desenvolva uma função chamada
+            getTheSubjects. Esta função recebe como parâmetro um objeto do tipo
+            aluno e deve acessar a propriedade "materias" e retornar a lista de
+            matérias em um alert.
+          </p>
+          <h4>Exemplificando</h4>
+          <div>
+            <ul>
+              <li>
+                Chame a função getTheSubjects passando como parâmetro um objeto
+                do tipo aluno.
+              </li>
+              <li>
+                Ao receber o objeto do tipo aluno como parâmetro, acesse a
+                propriedade "materias" e retorne seu valor em um alert.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong>3. Situação de matrícula</strong> - Desenvolva uma função
+            chamada registrationStatus. Esta função recebe como parâmetro um
+            objeto do tipo aluno. Deve acessar a propriedade
+            "situacaoMatricula", tratar o valor (true = Ativo, false = Inativo)
+            e retornar o valor tratado em um alert.
+          </p>
+          <h4>Exemplificando</h4>
+          <div>
+            <ul>
+              <li>
+                Chame a função resgistrationStatus passando como parâmetro um
+                objeto do tipo aluno.
+              </li>
+              <li>
+                Ao receber o objeto do tipo aluno, acesse a propriedade
+                "situacaoMatricula".
+                <div>
+                  <ul>
+                    <li>
+                      Se o valor de "situacaoMatricula" for igual a true,
+                      retorne em um alert o texto "Aluno ativo".
+                    </li>
+                    <li>
+                      Se a propriedade "situacaoMatricula" for igual a false,
+                      retorne em um alert "Aluno inativo".
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong>4. Gerar carteirinha</strong> - Desenvolva uma função
+            chamada generateStudentCard. Esta função recebe como parâmetro um
+            objeto do tipo aluno e deve retornar uma string contendo as
+            propriedades: nome, idade, curso e instituição em um formato
+            específico.
+          </p>
+          <h4>Exemplificando</h4>
+          <div>
+            <ul>
+              <li>
+                Chame a função generateStudentCard passando como parâmetro um
+                objeto do tipo aluno.
+              </li>
+              <li>
+                Crie uma variável cardInformation.
+                <div>
+                  <ul>
+                    <li>
+                      Armazene nesta variável uma string com o seguinte formato:
+                      <br />
+                      <strong>name:</strong> "Joe", idade: "31", curso:
+                      "FullStack", instituição: "Kenzie Br"
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                Lembre-se de substituir os valores fixados pelas propriedades do
+                objeto, para quando o objeto diferir, sua função ainda continue
+                funcionando.
+              </li>
+              <li>Retorne a variável cardInformation dentro de um alert.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>S8-08 | 💪 Atividade - Lista de Codewars - Variáveis I</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+      </section>
+      <section>
+        <h2>S8-09 | 💪 Atividade - Lista de Codewars - Variáveis II</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - Pillars.</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5bb0c58f484fcd170700063d"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Will you make it?</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5861d28f124b35723e00005e/train"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Grasshopper - If/else syntax debug.</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57089707fe2d01529f00024a/train"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-10 | 💪 Atividade - Lista de Codewars - Variáveis III</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - Holiday VIII - Duty Free</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57e92e91b63b6cbac20001e5"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - For Twins: 2. Math operations</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/59c287b16bddd291c700009a"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Easy logs</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5b68c7029756802aa2000176"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-11 | 💪 Atividade - Lista de Codewars - Variáveis IV</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - BASIC: Making Six Toast.</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5834fec22fb0ba7d080000e8"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Blood-Alcohol Content</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/571b6a4a7beb0a8ade0007a8"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Do I get a bonus?</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/56f6ad906b88de513f000d96"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Miles per gallon to kilometers per liter</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/557b5e0bddf29d861400005d"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-12 | 💪 Atividade - Lista de Codewars - Arrays I</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - My head is at the wrong end!.</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/56f699cd9400f5b7d8000b55"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Count the Monkeys!</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/56f69d9f9400f508fb000ba7"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - What is between?</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/55ecd718f46fba02e5000029"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Beginner - Lost Without a Map</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57f781872e3d8ca2a000007e"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Beginner - Reduce but Grow</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57f780909f7e8e3183000078"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Unfinished Loop - Bug Fixing #1</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/55c28f7304e3eaebef0000da"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-13 | 💪 Atividade - Lista de Codewars - Arrays II</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - Convert a string to an array</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57e76bc428d6fbc2d500036d"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Exercício - Exclamation marks series #11: Replace all vowel to
+          exclamation mark in the sentence
+        </h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57fb09ef2b5314a8a90001ed"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Century From Year</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Array plus array</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5a2be17aee1aaefe2a000151"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-14 | 💪 Atividade - Lista de Codewars - Arrays III</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - To square(root) or not to square(root)</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57f6ad55cca6e045d2000627"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Points of Reflection</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57bfea4cb19505912900012c"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Generate range of integers</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/55eca815d0d20962e1000106"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-15 | 💪 Atividade - Lista de Codewars - Arrays IV</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício - Sum of differences in array</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Find the first non-consecutive number</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/58f8a3a27a5c28d92e000144"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Abbreviate a Two Word Name</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - Remove String Spaces</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57eae20f5500ad98e50002c5"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício - You only need one - Beginner</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/57cc975ed542d3148f00015b"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-16 | 💪 Atividade - Lista de JavaScript - Debug I</h2>
+        <p>
+          Um mercado te pediu um sistema para ajudar organizar as seções e seus
+          respectivos itens, além de algumas funcionalidades administrativas,
+          como serviço de login e ponto.
+        </p>
+        <p>
+          A equipe de TI anterior começou a desenvolver, mas não estava dando
+          muito certo. O seu trabalho é fazer com que o sistema funcione.
+        </p>
+        <h3>Funções</h3>
+        <p>
+          Conforme a equipe anterior, as funções abaixo já foram desenvolvidas,
+          porém, nenhuma delas funciona da forma que deveria.
+        </p>
+        <article>
+          <h4>adicionarSecaoAoMercado()</h4>
+          <div>
+            <ul>
+              <li>
+                Esta função recebe uma seção (lista de itens) como parâmetro.
+              </li>
+              <li>
+                Esta função deve ter a funcionalidade de inserir uma nova seção
+                de itens ao mercado.
+              </li>
+              <li>Erros: Existe um erro na construção da estrutura.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>adicionarItemASecao()</h4>
+          <div>
+            <ul>
+              <li>
+                Esta função recebe um item (string) como parâmetro e a seção
+                (lista) para a inserção.
+              </li>
+              <li>
+                Esta função deve ter a funcionalidade de inserir novos itens à
+                seção de itens.
+              </li>
+              <li>Erros: Existe um erro na forma de inserir o elemento.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>retornarItemDaSecao()</h4>
+          <div>
+            <ul>
+              <li>
+                Esta função recebe como parâmetro o nome de um item da lista.
+              </li>
+              <li>
+                Esta função deve ter a funcionalidade de buscar e retornar o
+                item pelo nome na lista.
+              </li>
+              <li>
+                Erros: Existe erro de sintaxe, verifique a função do método.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>retornaUltimoItemDaSecao()</h4>
+          <div>
+            <ul>
+              <li>Esta função recebe um parâmetro a seção (lista).</li>
+              <li>
+                Esta função deve ter a funcionalidade de retornar o último item
+                da lista, independente do tamanho da lista.
+              </li>
+              <li>
+                Erros: Existe erro de lógica na captura do último elemento.
+              </li>
+            </ul>
+          </div>
+          <span>Caso de uso:</span>
+          <div>
+            <ul>
+              <li>Entrada: secao</li>
+              <li>Saída: undefined</li>
+              <li>Saída esperada: o último item da lista</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>consultaSecoesMercado()</h4>
+          <div>
+            <ul>
+              <li>
+                Esta função recebe a lista de seções do mercado como parâmetro.
+              </li>
+              <li>
+                Esta função deve ter a funcionalidade de imprimir todas seções
+                no console.
+              </li>
+              <li>
+                Erros: Existem erros de lógica na comparação e no retorno.
+              </li>
+            </ul>
+          </div>
+          <span>Caso de uso:</span>
+          <div>
+            <ul>
+              <li>Entrada: secoesMercado</li>
+              <li>Saída: apenas o elemento do índice 0</li>
+              <li>Saída esperada: Todos os elementos da lista.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>somaItens()</h4>
+          <div>
+            <ul>
+              <li>Esta função recebe dois valores como parâmetro.</li>
+              <li>
+                Esta função deve ter a funcionalidade de retornar a soma dos
+                dois valores.
+              </li>
+              <li>Erros: Existe erro de lógica.</li>
+            </ul>
+          </div>
+          <span>Caso de uso:</span>
+          <div>
+            <ul>
+              <li>Entrada: "1", "1"</li>
+              <li>Saída: 11</li>
+              <li>Saída esperada: 2</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>baterPonto()</h4>
+          <div>
+            <ul>
+              <li>
+                Esta função recebe como parâmetro o nome de um funcionário.
+              </li>
+              <li>
+                Esta função deve ter a funcionalidade de registrar o ponto, caso
+                o funcionário esteja registrado.
+              </li>
+              <li>Erros: Existe erro de lógica.</li>
+            </ul>
+          </div>
+          <span>Caso de uso:</span>
+          <div>
+            <ul>
+              <li>Entrada: "sonia", 0</li>
+              <li>Saída: Funcionario não cadastrado</li>
+              <li>Saída esperada: Turno processado.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h4>loginSistema()</h4>
+          <div>
+            <ul>
+              <li>
+                Esta função recebe como parâmetro um nome de usuário e uma
+                senha.
+              </li>
+              <li>
+                Esta função tem a funcionalidade de realizar o login de um
+                funcionário.
+              </li>
+              <li>
+                Erros: Existem erros de sintaxe e de lógica, corrija primeiro os
+                erros de sintaxe
+              </li>
+            </ul>
+          </div>
+          <span>Caso de uso:</span>
+          <div>
+            <ul>
+              <li>Entrada: "luffy123", 326541</li>
+              <li>Saída: Acesso liberado.</li>
+              <li>Saída esperada: Acesso negado.</li>
+            </ul>
+          </div>
+        </article>
+        <p>Até agora desenvolveram o seguinte código:</p>
+        <pre>
+            <code class="language-javascript">
+let secoesMercado = {}
+
+let hortifruti = []
+let açougue = []
+let padaria = []
+let AdegaEBebidas = []
+let laticíniosEFrios = []
+
+function adicionarSecaoAoMercado(secao){
+    secoesMercado.push(secao)
+    return secoesMercado
+}
+
+function adicionarItemASecao(novoItem, secao){
+    secao[0] = novoItem
+
+    return secao;
+}
+
+function retornarItemDaSecao(nomeItem, secao){
+   posicao = secao.splice(nomeItem)
+
+   itemProcurado = secao[posicao]
+
+   return itemProcurado;
+}
+
+function retornaUtlimoItemDaSecao(secao){
+    ultimoItem = secao[secao.length]
+
+    return ultimoItem
+}
+
+function consultaSecoesMercado(secoesMercado){
+    for(let i = 0; i <= secoesMercado.length; i+1){
+        return secoesMercado[i]
+    }
+}
+
+function somaItens(totalA, totalB){
+    if(totalB != 0 && totalB != 0){
+
+        return totalA + totalB
+    }
+}
+
+function baterPonto(nome, numeroFicha){
+    const funcionarios = ["Sônia", "Cage", "Alex", "Liu Ken"]
+    if(nome == funcionarios[numeroFicha]){
+        return "Turno processado"
+    }else{
+        return "Funcionario não cadastrado"
+    }
+}
+
+function loginSistema(nomeUsuario, senhaUsuario){
+    
+    const listaUsuarios = ["luffy123", "acer321", "nami"]
+
+    
+        if(nomeUsuario == luffy123){
+            if(senhaUsuario == "326541"){
+                return "Acesso liberado"
+            }
+        }if(nomeUsuario == acer321){
+            if(senhaUsuario == "741258"){
+                return "Acesso liberado"
+            }
+        }if(nomeUsuario == nami){
+            if(senhaUsuario == "963258"){
+                return "Acesso liberado"
+            }
+        }
+
+     return listaUsuarios
+}
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>S8-17 | 💪 Atividade - Lista de JavaScript - Debug II</h2>
+        <p>
+          Esta é uma atividade de debug. Os códigos estão parcialmente criados,
+          ou totalmente criados, mas funcionando incorretamente.
+        </p>
+        <p>Investigue o código, teste e corrija o que achar necessário.</p>
+        <h3>Contexto</h3>
+        <p>
+          Você é desenvolvedor em uma empresa. Uma equipe de desenvolvedores
+          começou a desenvolver uma solução para o cálculo dos orçamentos para
+          um cliente da área de agropecuária e serviços agrícolas.
+        </p>
+        <p>
+          O problema é que grande parte das funcionalidades desenvolvidas não
+          faz exatamente o que está sendo proposto, quando não fazem nada.
+        </p>
+        <div>
+          <h3>insereProduto()</h3>
+          <p>
+            A função não faz a inserção de um produto como deveria ser feito.
+            Além de sempre alterar o produto que estava antes, a lista sempre
+            fica com um item vazio.
+          </p>
+          <pre>
+            <code class="language-javascript">
+
+//função⁠
+⁠function insereProduto(produto){
+    const produtosCotacao = []
+    produtosCotacao[1] = produto
+
+    return produtosCotacao 
+}
+⁠
+//chamada da função
+insereProduto({
+    preco: 100,
+    quantidade: 10, 
+    nome: "Soja 25kg"
+})
+            </code>
+         </pre>
+          <p>
+            O esperado é que o produto fosse inserido na última posição da
+            lista, mas no momento está retorno está assim:
+            <strong>[empty, {…}]</strong>
+          </p>
+        </div>
+        <div>
+          <h3>criaProduto()</h3>
+          <p>
+            A função de criar produtos não está funcionando, o produto criado
+            não retorna e dá um erro.
+          </p>
+          <pre>
+            <code class="language-javascript">
+//função⁠
+function criaProduto(preco, quantidade, nome){
+    let produto = {
+        preco = preco,
+        quantidade = quantidade,
+        nome = nome
+    }
+
+    return produto
+}
+
+//chamada da função
+criaProduto(200, 150, "Feijão 25kg")
+
+
+            </code>
+          </pre>
+          <p>
+            O esperado é que o produto fosse retornado, mas no momento acontece
+            um erro.
+          </p>
+        </div>
+        <div>
+          <h3>renderizaProdutos()</h3>
+          <p>
+            A função de renderizar produtos deve mostrar os preços no console
+            para teste, porém não está funcionando como deveria.
+          </p>
+          <p>
+            O produto é impresso no console, mas com o nome
+            <strong>object</strong>, sendo que deveria imprimir o preço.
+          </p>
+          <pre>
+            <code class="language-javascript">
+//função⁠
+function renderizaProdutos(todosProdutos){
+    for (let i = 0; i <= todosProdutos.length; i++){
+        console.log(todosProdutos[i])
+    }
+}
+//chamada da função
+let todosProdutos = insereProduto(produto)
+
+renderizaProdutos(todosProdutos)
+
+         </code>
+            </pre>
+          <p>
+            O esperado é que o preço de cada um dos produtos da lista fossem
+            impressos no console.
+          </p>
+        </div>
+        <div>
+          <h3>cadastraServicos()</h3>
+          <p>
+            A função de cadastrar serviços não atualiza a lista corretamente,
+            com o novo elemento cadastrado. Sempre que um desenvolvedor tenta
+            armazenar a lista atualizada após uma inserção, a variável fica com
+            o valor <strong>undefined</strong>, e não com o valor atualizado da
+            lista.
+          </p>
+          <pre>
+            <code class="language-javascript">
+//função⁠
+function cadastraServicos(servico){
+     console.log(listServico.push(servico))
+}
+//chamada da função
+cadastraServicos({servico: "Pulverização", tipo: "Gafanhotos", valor: 50});
+
+          </code>
+             </pre>
+          <p>
+            O esperado é que a cada inserção de um objeto serviço a lista de
+            serviços fosse retornada de forma atualizada.
+          </p>
+        </div>
+        <div>
+          <h3>calculaValorServico()</h3>
+          <p>
+            A função de calcular o valor do serviço não funciona. Ela recebe uma
+            lista de serviços, mas o valor a cobrar calculado nunca é exatamente
+            o valor correto a ser cobrado, quase sempre é menor, exceto quando o
+            cliente faz apenas um serviço.
+          </p>
+          <pre>
+            <code class="language-javascript">
+
+//função⁠
+function calculaValorServico(clienteServicos){
+   let valorServico = clienteServicos.servicos[0].preco * clienteServicos.servicos[0].qtd
+
+    return valorServico
+}
+
+//chamada da função
+calculaValorServico({cliente: "Rafael", servico:[
+    pulverizacao = {
+       preco: 50,
+       quantidade: 10
+    },
+    capina = {
+        preco: 5,
+        quantidade: 10
+    },
+    aragem = {
+        preco: 200,
+        quantidade: 10
+    }
+
+]})
+        </code>
+            </pre>
+          <p>
+            O esperado aqui é que o valor retornado fosse:
+            <strong>R$ 2550,00</strong>. No momento dá erro e quando estava
+            funcionando, retornava apenas <strong>R$ 500,00</strong> para este
+            caso.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>S8-18 | 💪 Atividade - Lista de Codewars: Objetos I</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício 1 - Job Matching #1</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/56c22c5ae8b139416c00175d"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício 2 - Push a hash/an object into array</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/527b3cd0492b6b15250060af"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício 3 - "this" is a problem</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/547c71fdc5b2b38db1000098"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício 4 - Improving Math.round(x)</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/56be025f9347a066c7000e4f"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>S8-19 | 💪 Atividade - Lista de Codewars: Objetos II</h2>
+        <p>
+          Estas atividades irão te levar a plataforma do
+          <a href="https://www.codewars.com/dashboard" target="_blank"
+            >Codewars</a
+          >, então é necessário que você já tenha uma conta. As atividades a
+          seguir tem o intuito de fazer com que você continue desenvolvendo o
+          raciocínio lógico e abstração de problemas.
+        </p>
+        <h3>Exercício 1 - Split The Bill</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5641275f07335295f10000d0"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício 2 - Fix my method</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/558710234f02dcc4a8000005"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício 3 - Re-open class</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/53d628de83db278fb1000710"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <h3>Exercício 4 - Refactored Greeting</h3>
+        <div>
+          <ul>
+            <li>
+              <a
+                href="https://www.codewars.com/kata/5121303128ef4b495f000001"
+                target="_blank"
+                >Link para o exercício.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
