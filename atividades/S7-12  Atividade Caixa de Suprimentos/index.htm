@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S7-12  💪 Atividade Caixa de Suprimentos</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>S7-12  💪 Atividade Caixa de Suprimentos</h1>
+    </header>
+    <main>
+        <h2>Exercício - Itens para acampar</h2>
+        <section>
+            <article>
+                <p>Você e seus amigos decidiram ir acampar. Antes de mais nada fizeram uma lista, onde cada amigo deve comprar 5 itens para levar para a viagem.</p>
+            <p>Cada amigo ficou responsável por uma seção de itens. As seções são: Higiene, Alimentação, Farmácia e Lazer. Seus amigos devem trazer exatamente cinco itens de cada seção. Todos os itens serão colocados juntos na caixa de suprimentos.</p>
+            <p>Cada amigo representa um array e a caixa de suprimentos é a composição destes arrays. Você deve colocar os itens dentro da caixa de forma organizada, separando as seções, afinal de contas, não queremos nossos marshmallows com gosto de desinfetante.</p>
+            </article>
+            <article>
+                <h3>Condições</h3>
+            <p>Os amigos não podem comprar mais ou menos do que cinco itens, ou seja, tem que ser <strong>exatamente</strong> cinco itens.</p>
+            <p>Caso alguém compre mais itens ou menos itens, você deverá retornar uma mensagem.</p>
+            </article>
+        </section>
+        <h2>Pensando na solução</h2>
+        <section>
+            <p>1. Crie uma variável do tipo lista chamada <strong>caixaDeSuprimentos</strong>.</p>
+        </section>
+        <section>
+            <p>2. Crie uma variável para cada seção: <strong>higiene, alimentacao, farmacia, lazer</strong>. Todas devem ser do tipo lista.</p>
+        </section>
+        <section>
+            <p>3. Dentro de cada uma destas variáveis insira itens pertinentes a seção. Exemplo:</p>
+            <p>alimentacao = [<strong>'Pão de forma', 'Pão de Sal', 'Salsicha', 'Água', 'Molho de Tomate'</strong>]</p>
+        </section>
+        <section>
+            <p>4. Insira todas seções na variável caixaDeSuprimentos</p>
+        </section>
+        <section>
+            <p>5. Verifique se a caixa de suprimentos possui o tamanho 4 (4 seções).</p>
+            <ul>
+                <li>Se sim, acesse as seções e verifique se cada uma delas possui tamanho 5 (5 itens cada).
+                    <ul>
+                        <li>Se sim, retorne: "Podemos ir acampar."</li>
+                        <li>Se o tamanho for maior que 5, retorne: "Tem itens demais, não precisamos de tantos."</li>
+                        <li>Se o tamanho for menor que 5, retorne: "Precisamos de mais itens desta seção."</li>
+                    </ul>
+                </li>
+                <li>Se o tamanho da caixaDeSuprimentos for menor que 4, retorne: "Algum amigo ainda não retornou com os itens."</li>
+                <li>e o tamanho da caixaDeSuprimentos for maior que 4, retorne: "Acho que temos um intruso.".length</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <span><a href="https://canvas.kenzie.com.br/courses/93/pages/s7-12-%7C-atividade-caixa-de-suprimentos?module_item_id=27337" target="_blank">Solução</a></span>
+    </footer>
+</body>
+</html>
